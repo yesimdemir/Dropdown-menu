@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Öğreniyorum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+     
+     ul{
+        text-decoration: none;
+        list-style-type: none;
+        background-color: aqua;
+        
+        width: 100%;
+     }
+     ul li{
+        display: inline-block;
+        width: 100px;
+        margin-left: -30px;
+        padding: 10px;
+        margin-right: 25px;
+     }
+     ul li:hover{
+        background-color: pink;
+        transition: 0.5s;
+     }
+     ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+     }
+     ul li:nth-child(1){
+        background-color: blue;
+     }
+     ul li a:hover{
+        color: purple;
+        transition: 0.5s;
+     }
+     #news-content{
+        position: absolute;
+        display: none;
+        z-index: 1;
+        margin-top: 10px;
+        margin-left: -9px;
+        width: 100px;
+        
+     }
+     .news-li:hover #news-content{
+        display: block;
+     }
+    #news2-content{
+        position: absolute;
+        z-index: 1;
+        margin-left: 120px;
+        margin-top: -30px;
+        display: none;
+    }
+    .news2-li:hover #news2-content{
+        display: block;
+    }
+
+     
+    </style>
+</head>
+
+
+<body>
+    <ul>
+        <li><a href ="#"><i class="fa-solid fa-house"></i> Home</a> </li>
+        <li class="news-li">
+            <a href ="#"><i class="fa-solid fa-newspaper"></i> News</a>
+            <div id="news-content">
+                <ul>
+                    <li style="display: block;"><a href="#">News 1</a></li>
+                    <li class="news2-li" style="display: block;">
+                        <a href="#">News 2</a>
+                        <div id="news2-content">
+                            <ul>
+                                <li><a href="#">Details-1</a></li>
+                                <li><a href="#">Details-2</a></li>
+                                <li><a href="#">Details-3</a></li>
+                                <li><a href="#">Details-4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li style="display: block;"><a href="#">News 3</a></li>
+                    <li style="display: block;"><a href="#">News 4</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href ="#"><i class="fa-regular fa-address-book"></i> Concact</a> </li>
+        <li><a href ="#"><i class="fa-solid fa-eject"></i> About</a> </li>
+    </ul>
+
+  
+</body>
+
+</html>
